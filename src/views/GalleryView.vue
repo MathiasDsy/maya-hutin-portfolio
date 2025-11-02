@@ -47,12 +47,14 @@
 <script setup>
 import { ref } from 'vue'
 
+
+const base = import.meta.env.BASE_URL
 const artworks = [
   {
     id: 1,
     title: 'Éclat rouge',
     year: '2025',
-    image: '/images/art1.jpeg',
+    image: base + '/images/art1.jpeg',
     description: 'Composition centrée autour du rouge, inspirée d’un mouvement intérieur.',
     technique: 'Acrylique'
   },
@@ -60,45 +62,45 @@ const artworks = [
     id: 2,
     title: 'Sédiments',
     year: '2025',
-    image: '/images/art2.jpeg',
+    image: base + '/images/art2.jpeg',
     description: 'Superpositions et grattages pour créer un effet de matière.',
   },
   {
     id: 3,
     title: 'Nuit marine',
     year: '2025',
-    image: '/images/art3.jpeg',
+    image: base + '/images/art3.jpeg',
     description: 'Palette froide, travail sur la profondeur.',
   },
   {
     id: 4,
     title: 'Fragments',
     year: '2025',
-    image: '/images/art4.jpeg',
+    image: base + '/images/art4.jpeg',
   },
   {
     id: 5,
     title: 'Trace d’or',
     year: '2025',
-    image: '/images/art5.jpeg',
+    image: base + '/images/art5.jpeg',
   },
   {
     id: 6,
     title: 'En suspens',
     year: '2024',
-    image: '/images/art6.jpeg',
+    image: base + '/images/art6.jpeg',
   },
   {
     id: 7,
     title: 'Lignes',
     year: '2024',
-    image: '/images/art7.jpeg',
+    image: base + '/images/art7.jpeg',
   },
   {
     id: 8,
     title: 'Chaleur sourde',
     year: '2024',
-    image: '/images/art8.jpeg',
+    image: base + '/images/art8.jpeg',
   }
 ]
 
