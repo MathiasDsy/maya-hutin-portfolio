@@ -49,6 +49,7 @@ import { ref } from 'vue'
 
 
 const base = import.meta.env.BASE_URL
+console.log(base)
 const artworks = [
   {
     id: 1,
